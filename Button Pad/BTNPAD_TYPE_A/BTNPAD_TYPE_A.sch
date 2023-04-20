@@ -1,0 +1,302 @@
+EESchema Schematic File Version 4
+LIBS:BTNPAD_TYPE_A-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BUTTON TYPE A"
+Date ""
+Rev "1"
+Comp ""
+Comment1 "MULTI-WIRE WITH PULLUP"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 60EE63D1
+P 3100 4450
+F 0 "#PWR0101" H 3100 4200 50  0001 C CNN
+F 1 "GND" H 3105 4274 50  0000 C CNN
+F 2 "" H 3100 4450 50  0001 C CNN
+F 3 "" H 3100 4450 50  0001 C CNN
+	1    3100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3280 4082 3100 4082
+Wire Wire Line
+	3290 3249 3100 3249
+Wire Wire Line
+	3290 2482 3100 2482
+$Comp
+L Device:R_Small_US R1
+U 1 1 60EEB7B8
+P 4050 1420
+F 0 "R1" H 4120 1467 50  0000 L CNN
+F 1 "1K" H 4120 1374 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4050 1420 50  0001 C CNN
+F 3 "~" H 4050 1420 50  0001 C CNN
+	1    4050 1420
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 1610
+Wire Wire Line
+	4050 1610 4290 1610
+Wire Wire Line
+	4050 1610 4050 1520
+$Comp
+L power:VCC #PWR0102
+U 1 1 60EFB86A
+P 4050 1236
+F 0 "#PWR0102" H 4050 1086 50  0001 C CNN
+F 1 "VCC" H 4067 1412 50  0000 C CNN
+F 2 "" H 4050 1236 50  0001 C CNN
+F 3 "" H 4050 1236 50  0001 C CNN
+	1    4050 1236
+	1    0    0    -1  
+$EndComp
+Text GLabel 4290 1610 2    50   Input ~ 0
+B1
+$Comp
+L power:GND #PWR0105
+U 1 1 60F06038
+P 6170 5530
+F 0 "#PWR0105" H 6170 5280 50  0001 C CNN
+F 1 "GND" H 6175 5354 50  0000 C CNN
+F 2 "" H 6170 5530 50  0001 C CNN
+F 3 "" H 6170 5530 50  0001 C CNN
+	1    6170 5530
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 60F06398
+P 5847 5322
+F 0 "#PWR0106" H 5847 5172 50  0001 C CNN
+F 1 "VCC" H 5864 5498 50  0000 C CNN
+F 2 "" H 5847 5322 50  0001 C CNN
+F 3 "" H 5847 5322 50  0001 C CNN
+	1    5847 5322
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60F06CE6
+P 1620 6980
+F 0 "H1" H 1720 7027 50  0000 L CNN
+F 1 "M3" H 1720 6934 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1620 6980 50  0001 C CNN
+F 3 "~" H 1620 6980 50  0001 C CNN
+	1    1620 6980
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60F0721A
+P 1620 7270
+F 0 "H2" H 1720 7317 50  0000 L CNN
+F 1 "M3" H 1720 7224 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1620 7270 50  0001 C CNN
+F 3 "~" H 1620 7270 50  0001 C CNN
+	1    1620 7270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6170 5530 6170 5490
+Wire Wire Line
+	6170 5490 6270 5490
+Wire Wire Line
+	6270 4990 6130 4990
+Text GLabel 6130 4990 0    50   Input ~ 0
+B1
+$Comp
+L Switch:SW_Push_Dual_x2 SW2
+U 1 1 60EF3A9C
+P 3490 2482
+F 0 "SW2" H 3490 2772 50  0000 C CNN
+F 1 "SPST" H 3490 2679 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3490 2682 50  0001 C CNN
+F 3 "~" H 3490 2682 50  0001 C CNN
+	1    3490 2482
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual_x2 SW3
+U 1 1 60EF40B5
+P 3490 3249
+F 0 "SW3" H 3490 3539 50  0000 C CNN
+F 1 "SPST" H 3490 3446 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3490 3449 50  0001 C CNN
+F 3 "~" H 3490 3449 50  0001 C CNN
+	1    3490 3249
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual_x2 SW4
+U 1 1 60EF48ED
+P 3480 4082
+F 0 "SW4" H 3480 4372 50  0000 C CNN
+F 1 "SPST" H 3480 4279 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3480 4282 50  0001 C CNN
+F 3 "~" H 3480 4282 50  0001 C CNN
+	1    3480 4082
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual_x2 SW1
+U 1 1 60EF320B
+P 3500 1610
+F 0 "SW1" H 3500 1900 50  0000 C CNN
+F 1 "SPST" H 3500 1807 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 1810 50  0001 C CNN
+F 3 "~" H 3500 1810 50  0001 C CNN
+	1    3500 1610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1610 4050 1610
+Wire Wire Line
+	3300 1610 3100 1610
+$Comp
+L Device:R_Small_US R2
+U 1 1 60F44CD4
+P 4040 2292
+F 0 "R2" H 4110 2339 50  0000 L CNN
+F 1 "1K" H 4110 2246 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4040 2292 50  0001 C CNN
+F 3 "~" H 4040 2292 50  0001 C CNN
+	1    4040 2292
+	1    0    0    -1  
+$EndComp
+Connection ~ 4040 2482
+Wire Wire Line
+	4040 2482 4280 2482
+Wire Wire Line
+	4040 2482 4040 2392
+Text GLabel 4280 2482 2    50   Input ~ 0
+B2
+Wire Wire Line
+	3690 2482 4040 2482
+$Comp
+L Device:R_Small_US R3
+U 1 1 60F46780
+P 4040 3059
+F 0 "R3" H 4110 3106 50  0000 L CNN
+F 1 "1K" H 4110 3013 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4040 3059 50  0001 C CNN
+F 3 "~" H 4040 3059 50  0001 C CNN
+	1    4040 3059
+	1    0    0    -1  
+$EndComp
+Connection ~ 4040 3249
+Wire Wire Line
+	4040 3249 4280 3249
+Wire Wire Line
+	4040 3249 4040 3159
+Text GLabel 4280 3249 2    50   Input ~ 0
+B3
+Wire Wire Line
+	3690 3249 4040 3249
+$Comp
+L Device:R_Small_US R4
+U 1 1 60F49D9D
+P 4030 3892
+F 0 "R4" H 4100 3939 50  0000 L CNN
+F 1 "1K" H 4100 3846 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4030 3892 50  0001 C CNN
+F 3 "~" H 4030 3892 50  0001 C CNN
+	1    4030 3892
+	1    0    0    -1  
+$EndComp
+Connection ~ 4030 4082
+Wire Wire Line
+	4030 4082 4270 4082
+Wire Wire Line
+	4030 4082 4030 3992
+Text GLabel 4270 4082 2    50   Input ~ 0
+B4
+Wire Wire Line
+	3680 4082 4030 4082
+Wire Wire Line
+	4050 1320 4050 1236
+$Comp
+L power:VCC #PWR0107
+U 1 1 60F53D2C
+P 4040 2108
+F 0 "#PWR0107" H 4040 1958 50  0001 C CNN
+F 1 "VCC" H 4057 2284 50  0000 C CNN
+F 2 "" H 4040 2108 50  0001 C CNN
+F 3 "" H 4040 2108 50  0001 C CNN
+	1    4040 2108
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4040 2192 4040 2108
+$Comp
+L power:VCC #PWR0108
+U 1 1 60F56862
+P 4040 2875
+F 0 "#PWR0108" H 4040 2725 50  0001 C CNN
+F 1 "VCC" H 4057 3051 50  0000 C CNN
+F 2 "" H 4040 2875 50  0001 C CNN
+F 3 "" H 4040 2875 50  0001 C CNN
+	1    4040 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4040 2959 4040 2875
+$Comp
+L power:VCC #PWR0109
+U 1 1 60F592E5
+P 4030 3708
+F 0 "#PWR0109" H 4030 3558 50  0001 C CNN
+F 1 "VCC" H 4047 3884 50  0000 C CNN
+F 2 "" H 4030 3708 50  0001 C CNN
+F 3 "" H 4030 3708 50  0001 C CNN
+	1    4030 3708
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4030 3792 4030 3708
+Wire Wire Line
+	6270 5090 6130 5090
+Wire Wire Line
+	6270 5190 6130 5190
+Text GLabel 6130 5090 0    50   Input ~ 0
+B2
+Text GLabel 6130 5190 0    50   Input ~ 0
+B3
+Wire Wire Line
+	6270 5290 6130 5290
+Text GLabel 6130 5290 0    50   Input ~ 0
+B4
+Wire Wire Line
+	6270 5390 5847 5390
+Wire Wire Line
+	5847 5390 5847 5322
+Connection ~ 3100 4082
+Wire Wire Line
+	3100 4082 3100 4450
+Connection ~ 3100 2482
+Wire Wire Line
+	3100 1610 3100 2482
+Wire Wire Line
+	3100 2482 3100 3249
+Connection ~ 3100 3249
+Wire Wire Line
+	3100 3249 3100 4082
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 61ADFECB
+P 6470 5190
+F 0 "J1" H 6550 5182 50  0000 L CNN
+F 1 "Conn_01x06" H 6550 5089 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6470 5190 50  0001 C CNN
+F 3 "~" H 6470 5190 50  0001 C CNN
+	1    6470 5190
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
